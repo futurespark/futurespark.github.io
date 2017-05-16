@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Future Spark | FoxLab</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/soon.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <!-- START BODY -->
+  <body class="nomobile">
+
+    <!-- START HEADER -->
+    <section id="header">
+        <div class="container">
+            <header>
+                <!-- HEADLINE -->
+                <h1 data-animated="GoIn"><b>Future Spark</b> coming soon...</h1>
+            </header>
+            <!-- START TIMER -->
+            <div id="timer" data-animated="FadeIn">
+                <p id="message"></p>
+                <div id="days" class="timer_box"></div>
+                <div id="hours" class="timer_box"></div>
+                <div id="minutes" class="timer_box"></div>
+                <div id="seconds" class="timer_box"></div>
+            </div>
+            <!-- END TIMER -->
+            <div class="col-lg-4 col-lg-offset-4 mt centered">
+            	<h4>Reserve Your Seat Now...</h4>
+				<form class="form-inline"  target="_blank" action="https://goo.gl/forms/kKljDvAib1xyXvkn2" role="form">
+				  <!--<div class="form-group">
+				    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+				  </div>-->
+				  <button type="submit" class="btn btn-info">Register Now</button>
+				</form>            
+			</div>
+            
+        </div>
+        <!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
+        <div id="layer"></div>
+        <!-- END LAYER -->
+        <!-- START SLIDER -->
+        <div id="slider" class="rev_slider">
+            <ul>
+              <li data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/1.jpg">
+                <img src="assets/img/slider/1.jpg">
+              </li>
+              <li data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/2.jpg">
+                <img src="assets/img/slider/2.jpg">
+              </li>
+              <li data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/3.jpg">
+                <img src="assets/img/slider/3.jpg">
+              </li>
+              <li data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/4.jpg">
+                <img src="assets/img/slider/4.jpg">
+              </li>
+			  <li data-transition="slideleft" data-slotamount="1" data-thumb="assets/img/slider/5.png">
+                <img src="assets/img/slider/5.png">
+              </li>
+            </ul>
+        </div>
+        <!-- END SLIDER -->
+    </section>
+    <!-- END HEADER -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/soon/plugins.js"></script>
+    <script src="assets/js/soon/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/soon/custom.js"></script>
+	<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 17, 2017 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = "<h1>"+days+"</h1><p>Day</p>";
+  document.getElementById("hours").innerHTML = "<h1>"+hours+"</h1><p>Hour</p>";
+  document.getElementById("minutes").innerHTML = "<h1>"+minutes+"</h1><p>Minute</p>";
+  document.getElementById("seconds").innerHTML = "<h1>"+seconds+"</h1><p>Second</p>";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+  </body>
+  <!-- END BODY -->
+</html>
